@@ -1,0 +1,8 @@
+number = list(input('Введи число: \n'))
+'''Дано число, введенное с клавиатуры. Определите сумму квадратов нечетных цифр
+в числе.
+'''
+res = [int(i) for i in number]
+print(res)
+ress = [i**i for i in res if res.index(i) % 2 == 0]
+print(ress)
