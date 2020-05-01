@@ -2,4 +2,3 @@ Hello
 Test for merge of branch
 Second
 Therd
-
