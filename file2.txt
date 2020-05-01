@@ -1,1 +1,2 @@
 Hello
+Test for merge of branch
