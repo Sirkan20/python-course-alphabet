@@ -7,18 +7,12 @@ def simple_sort(data):
     Returns:
     """
 
-    def ex(a, b):
-        swap = a
-        b = a
-        a = swap
-        return a, b
-
     for i in range(len(data)):
-        if data[i] > data[i + 1]:
-            data[i], data[i + 1] = ex(data[i], data[i + 1])
+        for j in range(i + 1, len(data)):
+            if data[i] > data[j]:
+                data[i], data[j] = data[j], data[i]
     return data
 
 
-d = [1, 3, 5, 8, 9, 2, 7, 4, 6]
+d = [2, 9, 6, 7, 3, 2, 1]
 print(simple_sort(d))
-
