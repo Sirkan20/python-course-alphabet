@@ -1,5 +1,6 @@
 import psycopg2
 
+
 from relational_database.config import DATABASE
 from relational_database.db_utils import init_tables, fill_tables
 
